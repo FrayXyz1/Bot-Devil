@@ -256,6 +256,7 @@ console.log(tampilTanggal);
 console.log(tampilWaktu);
 
 const hexa = new WAConnection()
+    hexa.version = [2, 2142, 12]
    hexa.on('qr', qr => {
    qrcode.generate(qr, { small: true })
    console.log(color('[','white'),color('∆','red'),color(']','white'),color('Scan','white'),color('The','red'),color('Whatsapp','yellow'))
